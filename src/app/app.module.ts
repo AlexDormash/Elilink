@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { FormComponentComponent } from './components/form-component/form-component.component';
+import { CardsComponentComponent } from './components/cards-component/cards-component.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormComponentComponent,
+    CardsComponentComponent
   ],
   imports: [
     BrowserModule
