@@ -41,7 +41,7 @@ export class FormComponentComponent implements OnInit {
   }
 
   submitForm() {
-    if (this.formData.valid) {
+    if (this.formData.valid) { // возможно эту проверку можно было и не писать, т.к. она есть в тимплейте, но там ее можно руками убрать при желании
       this.formData.value['date'] = new Date();
       this.data.changeMessage(this.formData.value);
       localStorage['sendData'] = JSON.stringify(this.formData.value);
