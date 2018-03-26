@@ -1,0 +1,10 @@
+.container{
+  margin-top: 50px;
+}
+@media only screen and (max-width : 1024px) {
+  //такое себе решение переписывать сетку...
+  .col-md-8,.col-md-4{
+    max-width: 100%;
+    flex: 100%;
+  }
+}

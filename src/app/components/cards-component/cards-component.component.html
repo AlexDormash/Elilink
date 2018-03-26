@@ -1,3 +1,10 @@
-<p>
-  cards-component works!
-</p>
+<div class="card" *ngIf="dataCard" [@Animation]>
+  <div class="card-body">
+    <h5 class="card-title">Form Data</h5>
+    <p class="card-text">Name: {{dataCard.name}}</p>
+    <p class="card-text">Last name: {{dataCard.lastName}}</p>
+    <p class="card-text">Site: {{dataCard.site}}</p>
+    <p class="card-text" *ngIf="dataCard.email">Site: {{dataCard.email}}</p>
+    <p class="card-text">Last update: {{dataCard.date | amTimeAgo}}</p>
+  </div>
+</div>
